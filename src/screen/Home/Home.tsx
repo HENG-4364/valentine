@@ -3,7 +3,7 @@ import { useState } from "react"
 import "./home_screen.scss"
 
 const HomeScreen = () => {
-  const [a, setA] = useState("WTF")
+  const [a, setA] = useState("Movie")
   const [gg, setGg] = useState(true)
   const [title, setTitle] = useState(true)
   const [location, setLocation] = useState(false)
@@ -77,7 +77,7 @@ const HomeScreen = () => {
   return (
     <div className="wrapper">
       <h2 className={`question ${gg ? '' : "hidden"}`}>{
-        title ? `${"Do we date today?"}` : `${"Choose location will we date!❤️"} `}
+        title ? `${"Will you be my valentine ?"}` : `${"Where we will date!❤️"} `}
       </h2>
       <h2 className={`question ${gg ? 'hidden' : ""}`}>{
         title ? `${""}` : `${"Let's Go ❤️"} `}
@@ -104,10 +104,10 @@ const HomeScreen = () => {
             {a}
           </button>
           <button className="no-a" onMouseOver={handleNoMouseOverLocationA} onClick={handleClickA}>
-            Der lg
+            Eat sth
           </button>
           <button className="no-b" onMouseOver={handleNoMouseOverLocationB} onClick={handleClickB}>
-            nham ey
+            Hang out
           </button>
         </div>
       </div>
